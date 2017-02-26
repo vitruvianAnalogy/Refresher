@@ -1,0 +1,9 @@
+SelectionSort
+
+Increasing
+1. Select the min, put it at the end.
+2. How to find the min?
+	1. Do a first pass and find the min, i.e. Left most element is minimum until a smaller is found. Once the entire traversal has happened, put the minimum in a auxiliary list. First pass Time = O(n), Space = O(n) + O(1)
+3. What is the problem?
+	1. Problem is the extra array that we are maintaining.
+4. 
