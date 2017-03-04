@@ -11,7 +11,7 @@ public class BubbleSort{
 		for(int i=0;i<size;i++){
 			array[i] = sn.nextInt();
 		}
-		System.out.println("\n Here is your sorted list :");
+		System.out.println("\n Here is your bubble sorted list :");
 		array = bubbleSort1(array);
 
 		for(int i=0;i<size;i++){

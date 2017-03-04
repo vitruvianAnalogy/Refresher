@@ -1,0 +1,30 @@
+Multi-tasking
+- Execute multiple programs. This happens when a single CPU switches between programs.
+- A good program should release all resources it is no longer using, so other programs can use them.
+
+Multi-threading
+- Multiple threads of execution inside the same program.
+
+	If a thread reads a memory location while another thread writes to it, what value will the first thread end up reading? 
+		- The old value? 
+		- The value written by the second thread? 
+		- A value that is a mix between the two? 
+
+	If two threads are writing to the same memory location simultanously, what value will be left when they are done? 
+		- The value written by the first thread? 
+		- The value written by the second thread? 
+		- Or a mix of the two values written?
+
+
+Read/Write Locks in Java
+- Two threads reading the same resource doesn't cause problems, so multiple threads that read the resource are granted access at the same time.
+- BUT if there is a single thread that wants to write to the resource, no other reads or writes must be in progress at the same time. THIS IS WHY we need read write locks.
+
+- java.util.concurrent package has read/write lock implementations
+
+
+
+Read Access   	If no threads are writing, and no threads have requested write access. This also means that writes are higher priority than reads. Writes are higher priority than reads because there are so many  reads that if write will wait for read to finish, it might never get the chance to write and it will starve.
+
+Write Access   	If no threads are reading or writing.
+
