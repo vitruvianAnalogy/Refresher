@@ -1,0 +1,9 @@
+How to rearrange elements around the pivot.
+http://www.cs.tufts.edu/comp/105-2016f/handouts/quicksort.pdf
+
+
+Pivot:
+1. Pick last element
+2. Pick first element
+3. Pick median element
+4. Pick random element as pivot
