@@ -23,7 +23,6 @@ public class CountingSort{
 	public static void sort(int n){
 		int [] temp = new int[10];
 		newArray = new int[n];
-
 		//Count the frequency of elements
 		for(int i=0; i<n;i++){
 			temp[array[i]] = temp[array[i]]+1;
