@@ -1,0 +1,19 @@
+Binary heap
+1. Complete binary tree
+2. Min or Max
+	1. Min - Parent < Child
+	2. Max - Child < Parent
+
+3. Array or Binary Tree
+	1. In array, i is index, 2i+1 is left child, 2i+2 is right child, assuming i starts at 0.
+
+Psuedo Code for HeapSort. (Increasing order needs max heap)
+1. Build max heap.
+2. Take the root of heap (largest element) and replace it with the last element of the heap(smallest element). (largest element now can be put at the end of an array). Heap is short by one element. Heapify(largest element will find its place at the root again).
+3. Repeat Step 2 while size of heap is greater than 1.
+
+
+
+HEAPIFY
+1. Can only happen if child nodes are heapified, therefore, it is done bottom up order.
+2. Starting from the bottom, heapify the first PARENT node encountered.

@@ -14,13 +14,13 @@ public class CountingSort{
 		}
 
 		System.out.println("Here is the sorted array using counting sort");
-		sort(n);
+		countingSort(n);
 		for(int i=0;i<n;i++){
 			System.out.println(newArray[i]);
 		}
 	}
 
-	public static void sort(int n){
+	public static void countingSort(int n){
 		int [] temp = new int[10];
 		newArray = new int[n];
 		//Count the frequency of elements
